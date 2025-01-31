@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 '''
-Empty class Rectangle
+We write a class rectangle and is empty
 '''
 
 
 class Rectangle:
-    '''class Rectangle are empty'''
+    """
+    Class rectangle :
+    the class are empty
+    """
