@@ -5,4 +5,6 @@ Empty class Rectangle
 
 
 class Rectangle:
-    '''Empty class Rectangle'''
+    '''class Rectangle :
+    are empty
+    '''
