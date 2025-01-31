@@ -2,8 +2,8 @@
 '''
 We write a class rectangle
 parameter :
-- witdh 
-- height 
+- witdh
+- height
 '''
 
 
