@@ -38,35 +38,35 @@ Traceback (most recent call last):
  ...
 TypeError: '<' not supported between instances of 'str' and 'int'
 
->>> lst3.append("hello")
+>>> lst3.append("look")
 >>> lst3.append("bonjour")
->>> lst3.append("salam")
+>>> lst3.append("dejavu")
 >>> lst3.append("coucou")
 >>> print(lst3)
-['hello', 'bonjour', 'salam', 'coucou']
+['look', 'bonjour', 'dejavu', 'coucou']
 
 >>> lst3.print_sorted()
-['bonjour', 'coucou', 'salam', 'hello']
+['bonjour', 'coucou', 'dejavu', 'look']
 
->>> lst4.append("1")
+>>> lst4.append("3")
 >>> lst4.append("bonjour")
->>> lst4.append("4")
+>>> lst4.append("2")
 >>> lst4.append("coucou")
 >>> print(lst4)
-['1', 'bonjour', '4', 'coucou']
+['3', 'bonjour', '2', 'coucou']
 
 >>> lst4.print_sorted()
-['4', '1', 'bonjour', 'coucou']
+['2', '3', 'bonjour', 'coucou']
 
 >>> lst5.append(0)
->>> lst5.append(1.30)
->>> lst5.append(6.2)
+>>> lst5.append(3.25)
+>>> lst5.append(3.2)
 >>> lst5.append(9)
 >>> print(lst5)
-[0, 1.30, 6.2, 9]
+[0, 3.25, 3.2, 9]
 
 >>> lst5.print_sorted()
-[0, 6.2, 1.30, 9]
+[0, 3.2, 3.25, 9]
 
 >>> lst6.append(-3)
 >>> lst6.append(7)
