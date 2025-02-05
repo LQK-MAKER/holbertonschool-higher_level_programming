@@ -50,13 +50,13 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 
 >>> lst4.append("1")
 >>> lst4.append("bonjour")
->>> lst4.append("14")
+>>> lst4.append("4")
 >>> lst4.append("coucou")
 >>> print(lst4)
-['1', 'bonjour', '14', 'coucou']
+['1', 'bonjour', '4', 'coucou']
 
 >>> lst4.print_sorted()
-['14', '1', 'bonjour', 'coucou']
+['4', '1', 'bonjour', 'coucou']
 
 >>> lst5.append(0)
 >>> lst5.append(1.30)
