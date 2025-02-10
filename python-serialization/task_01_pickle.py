@@ -14,9 +14,9 @@ class CustomObject:
 
 def display(self):
     """test"""
-    print(f"Name: {self.name}")
-    print(f"Age: {self.age}")
-    print(f"Is student: {self.is_student}")
+    print("Name: {self.name}")
+    print("Age: {self.age}")
+    print("Is student: {self.is_student}")
 
 
 def serialize(self, filename):
@@ -25,7 +25,7 @@ def serialize(self, filename):
         with open(filename, 'wb') as file:
             pickle.dump(self, file)
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print("An error occurred: {e}")
 
 
 @classmethod
@@ -35,5 +35,5 @@ def deserialize(cls, filename):
         with open(filename, 'rb') as file:
             return pickle.load(file)
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print("An error occurred: {e}")
         return None
