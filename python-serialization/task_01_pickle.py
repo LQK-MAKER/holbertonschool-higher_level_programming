@@ -26,6 +26,7 @@ def serialize(self, filename):
             pickle.dump(self, file)
     except Exception as e:
         print("An error occurred: {e}")
+        return classmethod
 
 
 @classmethod
