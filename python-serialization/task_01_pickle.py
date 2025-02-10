@@ -12,9 +12,9 @@ class CustomObject:
 
 
 def display(self):
-    print(f"Name: {self.name}")
-    print(f"Age: {self.age}")
-    print(f"Is student: {self.is_student}")
+    print("Name: {self.name}")
+    print("Age: {self.age}")
+    print("Is student: {self.is_student}")
 
 
 def serialize(self, filename):
