@@ -31,6 +31,8 @@ def serialize(self, filename):
 @classmethod
 def deserialize(cls, filename):
     """test"""
+    import pickle
+
     try:
         with open(filename, 'rb') as file:
             return pickle.load(file)
