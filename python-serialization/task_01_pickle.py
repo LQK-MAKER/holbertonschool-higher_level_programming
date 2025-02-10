@@ -5,6 +5,7 @@ This module provides functions for serializing and deserializing."""
 
 
 class CustomObject:
+    """A custom object."""
     def __init__(self, name: str, age: int, is_student: bool):
         self.name = name
         self.age = age
