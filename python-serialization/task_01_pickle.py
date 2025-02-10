@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-This module provides functions for serializing and deserializing."""
+"""This module provides functions for serializing and deserializing."""
 
 import pickle
 
