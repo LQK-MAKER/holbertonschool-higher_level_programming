@@ -27,7 +27,7 @@ def serialize(self, filename):
         with open(filename, 'wb') as file:
             pickle.dump(self, file)
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print("An error occurred: {e}")
 
 
 @classmethod
@@ -38,6 +38,6 @@ def deserialize(cls, filename):
     try:
         with open(filename, 'rb') as file:
             return pickle.load(file)
-    except (FileNotFoundError, pickle.UnpicklingError) as e:
-        print(f"An error occurred: {e}")
+    except Exception as e:
+        print("An error occurred: {e}")
         return None
