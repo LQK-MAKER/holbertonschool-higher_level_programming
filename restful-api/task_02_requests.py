@@ -9,10 +9,11 @@ import csv
 def fetch_and_print_posts():
     """Fetches and prints posts"""
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    print("[{}] {}".format(r.status_code, r.text))
+    print("Status Code: {}".format(r.status_code))
     posts = r.json()
     for data in posts:
         print(data["title"])
+
 
 def fetch_and_save_posts():
     """Fetches and saves posts"""
