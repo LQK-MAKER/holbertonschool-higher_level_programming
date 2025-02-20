@@ -10,16 +10,17 @@ def fetch_and_print_posts():
     """Fetches and prints posts"""
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
     print("Status Code: {}".format(r.status_code))
-    posts = r.json()
-    for data in posts:
-        print(data["title"])
+    if r.status_code == 200:
+        post = r.json()
+        for data in post:
+            print(data["title"])
 
 
 def fetch_and_save_posts():
     """Fetches and saves posts"""
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
     if r.status_code == 200:
-        posts = r.json()
+        post = r.json()
         data = [{'id': new['id'], 'title': new['title'],
                 'body': new['body']} for new in post]
         with open('posts.csv', 'w') as f:
