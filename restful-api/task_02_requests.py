@@ -23,8 +23,8 @@ def fetch_and_save_posts():
         post = r.json()
         data = [{'id': new['id'], 'title': new['title'],
                 'body': new['body']} for new in post]
-        with open('posts.csv', 'w') as f:
+        with open('posts.csv', 'w') as c:
             fieldnames = ['id', 'title', 'body']
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer = csv.DictWriter(c, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(data)
